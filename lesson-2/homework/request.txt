@@ -1,0 +1,12 @@
+POST /api/api-trips HTTP/1.1
+Host: wapi.avtoticket.uz
+Content-Type: application/json
+Accept: */*
+
+{
+  "date": "2025-05-05",
+  "from": "1726",
+  "to": "1706",
+  "days": 3
+}
+

@@ -1,0 +1,3880 @@
+2025-05-05 19:55:04,521 - INFO - Starting fully automated fetch for 2025-05-03 22:30:00, seat 18
+2025-05-05 19:55:49,526 - INFO - Starting scraping process for trip_id...
+2025-05-05 19:55:50,831 - INFO - Searching for trip: Tashkent to Bukhara on 2025-05-03 at 22:30:00
+2025-05-05 19:56:06,202 - ERROR - Scraping error: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6A32EEFA5+77893]
+	GetHandleVerifier [0x00007FF6A32EF000+77984]
+	(No symbol) [0x00007FF6A30B91BA]
+	(No symbol) [0x00007FF6A310F16D]
+	(No symbol) [0x00007FF6A310F41C]
+	(No symbol) [0x00007FF6A3162237]
+	(No symbol) [0x00007FF6A313716F]
+	(No symbol) [0x00007FF6A315F07F]
+	(No symbol) [0x00007FF6A3136F03]
+	(No symbol) [0x00007FF6A3100328]
+	(No symbol) [0x00007FF6A3101093]
+	GetHandleVerifier [0x00007FF6A35A7B6D+2931725]
+	GetHandleVerifier [0x00007FF6A35A2132+2908626]
+	GetHandleVerifier [0x00007FF6A35C00F3+3031443]
+	GetHandleVerifier [0x00007FF6A33091EA+184970]
+	GetHandleVerifier [0x00007FF6A331086F+215311]
+	GetHandleVerifier [0x00007FF6A32F6EC4+110436]
+	GetHandleVerifier [0x00007FF6A32F7072+110866]
+	GetHandleVerifier [0x00007FF6A32DD479+5401]
+	BaseThreadInitThunk [0x00007FF8A50BE8D7+23]
+	RtlUserThreadStart [0x00007FF8A72BC5DC+44]
+
+2025-05-05 19:56:06,218 - WARNING - Scraping failed. Falling back to fuzzing trip_id...
+2025-05-05 19:56:06,218 - INFO - Trying guessed trip_id: 82803
+2025-05-05 19:56:06,218 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82803
+2025-05-05 19:56:07,718 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:07,718 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:07,718 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82803
+2025-05-05 19:56:07,868 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:07,868 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:07,868 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82803
+2025-05-05 19:56:08,071 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:08,071 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:08,071 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82803/manifest
+2025-05-05 19:56:08,188 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:08,188 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:08,188 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82803/manifest
+2025-05-05 19:56:08,299 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:08,299 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:08,299 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82803/manifest
+2025-05-05 19:56:08,464 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:08,464 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:08,464 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82803/passenger
+2025-05-05 19:56:08,535 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:08,535 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:08,535 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82803/passenger
+2025-05-05 19:56:09,072 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:09,072 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:09,072 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82803/passenger
+2025-05-05 19:56:09,425 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:09,425 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:09,425 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82803/seats
+2025-05-05 19:56:09,798 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:09,800 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:09,800 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82803/seats
+2025-05-05 19:56:10,259 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:10,259 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:10,259 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82803/seats
+2025-05-05 19:56:10,623 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:10,623 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:10,623 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82803
+2025-05-05 19:56:10,656 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:10,656 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:10,656 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82803
+2025-05-05 19:56:10,678 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:10,680 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:10,680 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82803
+2025-05-05 19:56:10,704 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:10,704 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:10,704 - INFO - Trying guessed trip_id: 82813
+2025-05-05 19:56:10,704 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82813
+2025-05-05 19:56:11,150 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:11,156 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:11,156 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82813
+2025-05-05 19:56:11,384 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:11,384 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:11,384 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82813
+2025-05-05 19:56:11,756 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:11,756 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:11,756 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82813/manifest
+2025-05-05 19:56:11,889 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:11,889 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:11,889 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82813/manifest
+2025-05-05 19:56:12,153 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:12,155 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:12,155 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82813/manifest
+2025-05-05 19:56:12,989 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:12,989 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:12,989 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82813/passenger
+2025-05-05 19:56:13,009 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:13,016 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:13,016 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82813/passenger
+2025-05-05 19:56:13,038 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:13,038 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:13,038 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82813/passenger
+2025-05-05 19:56:13,062 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:13,064 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:13,064 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82813/seats
+2025-05-05 19:56:13,086 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:13,086 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:13,086 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82813/seats
+2025-05-05 19:56:13,111 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:13,111 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:13,111 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82813/seats
+2025-05-05 19:56:13,131 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:13,131 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:13,131 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82813
+2025-05-05 19:56:13,150 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:13,153 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:13,153 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82813
+2025-05-05 19:56:13,175 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:13,175 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:13,175 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82813
+2025-05-05 19:56:13,199 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:13,199 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:13,199 - INFO - Trying guessed trip_id: 82823
+2025-05-05 19:56:13,199 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82823
+2025-05-05 19:56:13,280 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:13,280 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:13,280 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82823
+2025-05-05 19:56:13,303 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:13,303 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:13,303 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82823
+2025-05-05 19:56:13,331 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:13,331 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:13,331 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82823/manifest
+2025-05-05 19:56:13,356 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:13,356 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:13,356 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82823/manifest
+2025-05-05 19:56:13,373 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:13,373 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:13,377 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82823/manifest
+2025-05-05 19:56:13,398 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:13,398 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:13,398 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82823/passenger
+2025-05-05 19:56:13,423 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:13,423 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:13,423 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82823/passenger
+2025-05-05 19:56:13,446 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:13,446 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:13,446 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82823/passenger
+2025-05-05 19:56:13,473 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:13,473 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:13,473 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82823/seats
+2025-05-05 19:56:13,501 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:13,501 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:13,501 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82823/seats
+2025-05-05 19:56:13,527 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:13,527 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:13,527 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82823/seats
+2025-05-05 19:56:13,544 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:13,544 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:13,544 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82823
+2025-05-05 19:56:13,575 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:13,575 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:13,575 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82823
+2025-05-05 19:56:13,593 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:13,593 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:13,593 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82823
+2025-05-05 19:56:13,701 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:13,701 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:13,701 - INFO - Trying guessed trip_id: 82833
+2025-05-05 19:56:13,701 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82833
+2025-05-05 19:56:14,008 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:14,008 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:14,008 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82833
+2025-05-05 19:56:14,062 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:14,062 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:14,062 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82833
+2025-05-05 19:56:14,087 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:14,087 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:14,087 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82833/manifest
+2025-05-05 19:56:14,111 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:14,111 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:14,111 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82833/manifest
+2025-05-05 19:56:14,679 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:14,679 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:14,679 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82833/manifest
+2025-05-05 19:56:14,701 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:14,701 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:14,701 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82833/passenger
+2025-05-05 19:56:14,719 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:14,719 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:14,719 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82833/passenger
+2025-05-05 19:56:14,744 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:14,748 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:14,748 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82833/passenger
+2025-05-05 19:56:14,770 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:14,770 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:14,770 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82833/seats
+2025-05-05 19:56:14,793 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:14,793 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:14,793 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82833/seats
+2025-05-05 19:56:14,814 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:14,814 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:14,814 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82833/seats
+2025-05-05 19:56:14,838 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:14,838 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:14,838 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82833
+2025-05-05 19:56:14,859 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:14,859 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:14,859 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82833
+2025-05-05 19:56:14,884 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:14,886 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:14,886 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82833
+2025-05-05 19:56:14,904 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:14,906 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:14,906 - INFO - Trying guessed trip_id: 82843
+2025-05-05 19:56:14,906 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82843
+2025-05-05 19:56:14,976 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:14,976 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:14,976 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82843
+2025-05-05 19:56:14,997 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:14,997 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:14,997 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82843
+2025-05-05 19:56:15,018 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:15,018 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:15,020 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82843/manifest
+2025-05-05 19:56:15,035 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:15,035 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:15,035 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82843/manifest
+2025-05-05 19:56:15,070 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:15,070 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:15,070 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82843/manifest
+2025-05-05 19:56:15,093 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:15,093 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:15,093 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82843/passenger
+2025-05-05 19:56:15,114 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:15,114 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:15,114 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82843/passenger
+2025-05-05 19:56:15,140 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:15,140 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:15,140 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82843/passenger
+2025-05-05 19:56:15,161 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:15,161 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:15,161 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82843/seats
+2025-05-05 19:56:15,186 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:15,186 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:15,186 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82843/seats
+2025-05-05 19:56:15,208 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:15,208 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:15,208 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82843/seats
+2025-05-05 19:56:15,227 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:15,227 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:15,227 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82843
+2025-05-05 19:56:15,253 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:15,253 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:15,253 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82843
+2025-05-05 19:56:15,274 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:15,274 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:15,274 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82843
+2025-05-05 19:56:15,293 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:15,293 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:15,293 - INFO - Trying guessed trip_id: 82853
+2025-05-05 19:56:15,293 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82853
+2025-05-05 19:56:15,385 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:15,387 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:15,387 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82853
+2025-05-05 19:56:15,399 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:15,399 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:15,399 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82853
+2025-05-05 19:56:15,424 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:15,424 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:15,424 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82853/manifest
+2025-05-05 19:56:15,451 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:15,453 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:15,453 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82853/manifest
+2025-05-05 19:56:15,474 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:15,474 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:15,474 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82853/manifest
+2025-05-05 19:56:15,491 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:15,498 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:15,498 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82853/passenger
+2025-05-05 19:56:15,525 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:15,525 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:15,525 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82853/passenger
+2025-05-05 19:56:15,545 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:15,545 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:15,545 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82853/passenger
+2025-05-05 19:56:15,571 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:15,571 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:15,571 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82853/seats
+2025-05-05 19:56:15,594 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:15,594 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:15,594 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82853/seats
+2025-05-05 19:56:15,616 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:15,616 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:15,616 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82853/seats
+2025-05-05 19:56:15,640 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:15,640 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:15,640 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82853
+2025-05-05 19:56:15,662 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:15,662 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:15,662 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82853
+2025-05-05 19:56:15,688 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:15,688 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:15,688 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82853
+2025-05-05 19:56:15,713 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:15,713 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:15,713 - INFO - Trying guessed trip_id: 82863
+2025-05-05 19:56:15,713 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82863
+2025-05-05 19:56:16,593 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:16,594 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:16,594 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82863
+2025-05-05 19:56:16,608 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:16,608 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:16,608 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82863
+2025-05-05 19:56:16,632 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:16,632 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:16,632 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82863/manifest
+2025-05-05 19:56:16,661 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:16,661 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:16,661 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82863/manifest
+2025-05-05 19:56:16,684 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:16,684 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:16,684 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82863/manifest
+2025-05-05 19:56:16,707 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:16,707 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:16,707 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82863/passenger
+2025-05-05 19:56:16,746 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:16,746 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:16,746 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82863/passenger
+2025-05-05 19:56:16,771 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:16,771 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:16,771 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82863/passenger
+2025-05-05 19:56:16,794 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:16,794 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:16,794 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82863/seats
+2025-05-05 19:56:16,819 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:16,819 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:16,819 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82863/seats
+2025-05-05 19:56:16,840 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:16,840 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:16,840 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82863/seats
+2025-05-05 19:56:16,862 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:16,862 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:16,862 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82863
+2025-05-05 19:56:16,888 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:16,888 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:16,888 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82863
+2025-05-05 19:56:16,932 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:16,932 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:16,932 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82863
+2025-05-05 19:56:16,955 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:16,955 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:16,955 - INFO - Trying guessed trip_id: 82873
+2025-05-05 19:56:16,955 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82873
+2025-05-05 19:56:17,840 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:17,840 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:17,840 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82873
+2025-05-05 19:56:17,859 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:17,859 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:17,859 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82873
+2025-05-05 19:56:17,890 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:17,890 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:17,890 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82873/manifest
+2025-05-05 19:56:17,914 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:17,914 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:17,914 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82873/manifest
+2025-05-05 19:56:17,941 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:17,941 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:17,941 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82873/manifest
+2025-05-05 19:56:17,963 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:17,963 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:17,963 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82873/passenger
+2025-05-05 19:56:17,987 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:17,987 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:17,987 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82873/passenger
+2025-05-05 19:56:18,011 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:18,011 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:18,011 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82873/passenger
+2025-05-05 19:56:18,035 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:18,037 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:18,037 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82873/seats
+2025-05-05 19:56:18,064 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:18,064 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:18,064 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82873/seats
+2025-05-05 19:56:18,085 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:18,085 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:18,085 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82873/seats
+2025-05-05 19:56:18,112 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:18,113 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:18,113 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82873
+2025-05-05 19:56:18,133 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:18,135 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:18,135 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82873
+2025-05-05 19:56:18,158 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:18,158 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:18,158 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82873
+2025-05-05 19:56:18,174 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:18,174 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:18,182 - INFO - Trying guessed trip_id: 82883
+2025-05-05 19:56:18,182 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82883
+2025-05-05 19:56:18,288 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:18,288 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:18,288 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82883
+2025-05-05 19:56:18,311 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:18,311 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:18,311 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82883
+2025-05-05 19:56:18,333 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:18,336 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:18,336 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82883/manifest
+2025-05-05 19:56:18,349 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:18,349 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:18,349 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82883/manifest
+2025-05-05 19:56:18,378 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:18,378 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:18,378 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82883/manifest
+2025-05-05 19:56:18,399 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:18,401 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:18,401 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82883/passenger
+2025-05-05 19:56:18,424 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:18,424 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:18,424 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82883/passenger
+2025-05-05 19:56:18,451 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:18,455 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:18,455 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82883/passenger
+2025-05-05 19:56:18,479 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:18,479 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:18,479 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82883/seats
+2025-05-05 19:56:18,501 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:18,501 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:18,501 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82883/seats
+2025-05-05 19:56:18,527 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:18,527 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:18,527 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82883/seats
+2025-05-05 19:56:19,475 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:19,482 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:19,482 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82883
+2025-05-05 19:56:19,498 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:19,498 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:19,498 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82883
+2025-05-05 19:56:19,523 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:19,523 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:19,523 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82883
+2025-05-05 19:56:19,541 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:19,541 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:19,548 - INFO - Trying guessed trip_id: 82893
+2025-05-05 19:56:19,548 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82893
+2025-05-05 19:56:19,636 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:19,636 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:19,636 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82893
+2025-05-05 19:56:19,685 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:19,685 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:19,687 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82893
+2025-05-05 19:56:19,706 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:19,706 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:19,706 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82893/manifest
+2025-05-05 19:56:19,727 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:19,727 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:19,727 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82893/manifest
+2025-05-05 19:56:19,748 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:19,748 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:19,748 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82893/manifest
+2025-05-05 19:56:19,768 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:19,768 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:19,768 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82893/passenger
+2025-05-05 19:56:19,790 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:19,790 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:19,790 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82893/passenger
+2025-05-05 19:56:19,813 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:19,813 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:19,813 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82893/passenger
+2025-05-05 19:56:19,835 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:19,835 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:19,835 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82893/seats
+2025-05-05 19:56:19,857 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:19,857 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:19,857 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82893/seats
+2025-05-05 19:56:19,892 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:19,892 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:19,892 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82893/seats
+2025-05-05 19:56:19,917 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:19,917 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:19,917 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82893
+2025-05-05 19:56:19,948 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:19,948 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:19,948 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82893
+2025-05-05 19:56:19,973 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:19,973 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:19,973 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82893
+2025-05-05 19:56:20,000 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,000 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,000 - INFO - Trying guessed trip_id: 82903
+2025-05-05 19:56:20,000 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82903
+2025-05-05 19:56:20,082 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,082 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,082 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82903
+2025-05-05 19:56:20,104 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,115 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,115 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82903
+2025-05-05 19:56:20,144 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,144 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,144 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82903/manifest
+2025-05-05 19:56:20,173 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,173 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,173 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82903/manifest
+2025-05-05 19:56:20,201 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,201 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,201 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82903/manifest
+2025-05-05 19:56:20,224 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,224 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,224 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82903/passenger
+2025-05-05 19:56:20,249 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,249 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,249 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82903/passenger
+2025-05-05 19:56:20,271 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,271 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,271 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82903/passenger
+2025-05-05 19:56:20,296 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,296 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,296 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82903/seats
+2025-05-05 19:56:20,321 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,321 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,321 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82903/seats
+2025-05-05 19:56:20,338 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,338 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,338 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82903/seats
+2025-05-05 19:56:20,359 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,359 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,359 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82903
+2025-05-05 19:56:20,380 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,380 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,380 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82903
+2025-05-05 19:56:20,479 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,479 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,479 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82903
+2025-05-05 19:56:20,499 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,499 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,499 - INFO - Trying guessed trip_id: 82913
+2025-05-05 19:56:20,499 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82913
+2025-05-05 19:56:20,581 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,581 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,581 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82913
+2025-05-05 19:56:20,606 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,606 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,606 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82913
+2025-05-05 19:56:20,630 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,630 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,630 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82913/manifest
+2025-05-05 19:56:20,648 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,648 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,648 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82913/manifest
+2025-05-05 19:56:20,674 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,674 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,674 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82913/manifest
+2025-05-05 19:56:20,698 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,698 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,698 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82913/passenger
+2025-05-05 19:56:20,723 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,723 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,723 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82913/passenger
+2025-05-05 19:56:20,744 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,744 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,748 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82913/passenger
+2025-05-05 19:56:20,766 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,766 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,766 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82913/seats
+2025-05-05 19:56:20,790 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,790 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,790 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82913/seats
+2025-05-05 19:56:20,819 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,819 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,819 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82913/seats
+2025-05-05 19:56:20,845 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,845 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,845 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82913
+2025-05-05 19:56:20,866 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,866 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,866 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82913
+2025-05-05 19:56:20,889 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,889 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,889 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82913
+2025-05-05 19:56:20,917 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,917 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,917 - INFO - Trying guessed trip_id: 82923
+2025-05-05 19:56:20,917 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82923
+2025-05-05 19:56:20,992 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:20,992 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:20,992 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82923
+2025-05-05 19:56:21,022 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,022 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,022 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82923
+2025-05-05 19:56:21,041 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,042 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,042 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82923/manifest
+2025-05-05 19:56:21,063 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,063 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,063 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82923/manifest
+2025-05-05 19:56:21,089 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,089 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,089 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82923/manifest
+2025-05-05 19:56:21,117 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,117 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,117 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82923/passenger
+2025-05-05 19:56:21,139 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,139 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,139 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82923/passenger
+2025-05-05 19:56:21,167 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,173 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,173 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82923/passenger
+2025-05-05 19:56:21,198 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,198 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,198 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82923/seats
+2025-05-05 19:56:21,224 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,224 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,224 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82923/seats
+2025-05-05 19:56:21,245 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,245 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,245 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82923/seats
+2025-05-05 19:56:21,266 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,266 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,266 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82923
+2025-05-05 19:56:21,291 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,291 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,291 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82923
+2025-05-05 19:56:21,333 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,333 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,333 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82923
+2025-05-05 19:56:21,356 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,356 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,356 - INFO - Trying guessed trip_id: 82933
+2025-05-05 19:56:21,356 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82933
+2025-05-05 19:56:21,432 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,432 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,432 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82933
+2025-05-05 19:56:21,451 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,453 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,453 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82933
+2025-05-05 19:56:21,476 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,490 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,490 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82933/manifest
+2025-05-05 19:56:21,516 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,516 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,516 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82933/manifest
+2025-05-05 19:56:21,533 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,541 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,541 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82933/manifest
+2025-05-05 19:56:21,563 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,563 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,563 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82933/passenger
+2025-05-05 19:56:21,587 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,587 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,587 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82933/passenger
+2025-05-05 19:56:21,611 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,611 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,611 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82933/passenger
+2025-05-05 19:56:21,633 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,633 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,633 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82933/seats
+2025-05-05 19:56:21,654 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,654 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,654 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82933/seats
+2025-05-05 19:56:21,680 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,680 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,680 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82933/seats
+2025-05-05 19:56:21,702 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,702 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,702 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82933
+2025-05-05 19:56:21,730 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,732 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,732 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82933
+2025-05-05 19:56:21,753 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,753 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,753 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82933
+2025-05-05 19:56:21,769 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,769 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,769 - INFO - Trying guessed trip_id: 82943
+2025-05-05 19:56:21,769 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82943
+2025-05-05 19:56:21,853 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,853 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,853 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82943
+2025-05-05 19:56:21,875 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,877 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,877 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82943
+2025-05-05 19:56:21,892 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,892 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,892 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82943/manifest
+2025-05-05 19:56:21,916 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:21,916 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:21,916 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82943/manifest
+2025-05-05 19:56:22,251 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:22,251 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:22,251 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82943/manifest
+2025-05-05 19:56:22,276 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:22,276 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:22,276 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82943/passenger
+2025-05-05 19:56:22,298 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:22,300 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:22,300 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82943/passenger
+2025-05-05 19:56:22,326 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:22,326 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:22,326 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82943/passenger
+2025-05-05 19:56:22,352 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:22,352 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:22,352 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82943/seats
+2025-05-05 19:56:22,373 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:22,373 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:22,373 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82943/seats
+2025-05-05 19:56:22,395 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:22,395 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:22,395 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82943/seats
+2025-05-05 19:56:22,413 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:22,416 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:22,416 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82943
+2025-05-05 19:56:22,437 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:22,437 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:22,437 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82943
+2025-05-05 19:56:22,456 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:22,457 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:22,457 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82943
+2025-05-05 19:56:22,477 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:22,477 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:22,477 - INFO - Trying guessed trip_id: 82953
+2025-05-05 19:56:22,477 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82953
+2025-05-05 19:56:22,568 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:22,568 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:22,568 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82953
+2025-05-05 19:56:22,592 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:22,593 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:22,593 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82953
+2025-05-05 19:56:22,613 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:22,613 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:22,613 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82953/manifest
+2025-05-05 19:56:22,639 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:22,639 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:22,639 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82953/manifest
+2025-05-05 19:56:22,661 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:22,661 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:22,661 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82953/manifest
+2025-05-05 19:56:22,681 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:22,681 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:22,681 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82953/passenger
+2025-05-05 19:56:22,699 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:22,704 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:22,704 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82953/passenger
+2025-05-05 19:56:22,716 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:22,724 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:22,724 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82953/passenger
+2025-05-05 19:56:22,740 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:22,744 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:22,744 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82953/seats
+2025-05-05 19:56:22,760 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:22,760 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:22,760 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82953/seats
+2025-05-05 19:56:22,790 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:22,790 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:22,790 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82953/seats
+2025-05-05 19:56:22,810 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:22,810 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:22,810 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82953
+2025-05-05 19:56:22,827 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:22,827 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:22,831 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82953
+2025-05-05 19:56:22,863 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:22,863 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:22,863 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82953
+2025-05-05 19:56:22,890 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:22,890 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:22,890 - INFO - Trying guessed trip_id: 82963
+2025-05-05 19:56:22,890 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82963
+2025-05-05 19:56:23,209 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,209 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,209 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82963
+2025-05-05 19:56:23,235 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,235 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,235 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82963
+2025-05-05 19:56:23,267 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,267 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,267 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82963/manifest
+2025-05-05 19:56:23,291 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,291 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,291 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82963/manifest
+2025-05-05 19:56:23,310 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,310 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,310 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82963/manifest
+2025-05-05 19:56:23,338 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,338 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,338 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82963/passenger
+2025-05-05 19:56:23,374 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,374 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,374 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82963/passenger
+2025-05-05 19:56:23,392 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,392 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,392 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82963/passenger
+2025-05-05 19:56:23,424 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,424 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,424 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82963/seats
+2025-05-05 19:56:23,447 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,447 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,447 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82963/seats
+2025-05-05 19:56:23,479 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,479 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,479 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82963/seats
+2025-05-05 19:56:23,503 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,503 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,503 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82963
+2025-05-05 19:56:23,525 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,525 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,525 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82963
+2025-05-05 19:56:23,549 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,549 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,549 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82963
+2025-05-05 19:56:23,583 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,583 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,583 - INFO - Trying guessed trip_id: 82973
+2025-05-05 19:56:23,584 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82973
+2025-05-05 19:56:23,650 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,650 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,650 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82973
+2025-05-05 19:56:23,676 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,676 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,676 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82973
+2025-05-05 19:56:23,709 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,713 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,713 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82973/manifest
+2025-05-05 19:56:23,736 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,736 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,736 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82973/manifest
+2025-05-05 19:56:23,758 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,758 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,758 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82973/manifest
+2025-05-05 19:56:23,782 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,782 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,782 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82973/passenger
+2025-05-05 19:56:23,805 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,807 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,807 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82973/passenger
+2025-05-05 19:56:23,829 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,829 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,829 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82973/passenger
+2025-05-05 19:56:23,849 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,849 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,849 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82973/seats
+2025-05-05 19:56:23,869 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,869 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,869 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82973/seats
+2025-05-05 19:56:23,894 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,895 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,895 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82973/seats
+2025-05-05 19:56:23,918 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,918 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,918 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82973
+2025-05-05 19:56:23,942 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,942 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,942 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82973
+2025-05-05 19:56:23,971 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,971 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,971 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82973
+2025-05-05 19:56:23,994 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:23,994 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:23,994 - INFO - Trying guessed trip_id: 82983
+2025-05-05 19:56:23,994 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82983
+2025-05-05 19:56:24,077 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:24,077 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:24,077 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82983
+2025-05-05 19:56:24,100 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:24,100 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:24,100 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82983
+2025-05-05 19:56:24,123 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:24,123 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:24,123 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82983/manifest
+2025-05-05 19:56:24,151 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:24,151 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:24,151 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82983/manifest
+2025-05-05 19:56:24,175 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:24,175 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:24,175 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82983/manifest
+2025-05-05 19:56:24,199 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:24,208 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:24,208 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82983/passenger
+2025-05-05 19:56:24,232 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:24,232 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:24,232 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82983/passenger
+2025-05-05 19:56:24,251 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:24,251 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:24,251 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82983/passenger
+2025-05-05 19:56:24,274 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:24,274 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:24,274 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82983/seats
+2025-05-05 19:56:24,301 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:24,301 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:24,301 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82983/seats
+2025-05-05 19:56:24,330 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:24,330 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:24,330 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82983/seats
+2025-05-05 19:56:24,354 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:24,354 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:24,354 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82983
+2025-05-05 19:56:24,377 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:24,377 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:24,377 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82983
+2025-05-05 19:56:24,391 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:24,399 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:24,399 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82983
+2025-05-05 19:56:24,417 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:24,417 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:24,417 - INFO - Trying guessed trip_id: 82993
+2025-05-05 19:56:24,417 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82993
+2025-05-05 19:56:24,491 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:24,491 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:24,491 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82993
+2025-05-05 19:56:24,516 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:24,516 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:24,516 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82993
+2025-05-05 19:56:24,540 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:24,540 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:24,540 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82993/manifest
+2025-05-05 19:56:24,562 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:24,562 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:24,564 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82993/manifest
+2025-05-05 19:56:24,582 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:24,582 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:24,582 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82993/manifest
+2025-05-05 19:56:24,821 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:24,821 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:24,821 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82993/passenger
+2025-05-05 19:56:24,843 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:24,843 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:24,843 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82993/passenger
+2025-05-05 19:56:24,869 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:24,870 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:24,870 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82993/passenger
+2025-05-05 19:56:24,894 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:24,894 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:24,894 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82993/seats
+2025-05-05 19:56:25,132 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:25,133 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:25,133 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82993/seats
+2025-05-05 19:56:25,153 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:25,153 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:25,153 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82993/seats
+2025-05-05 19:56:25,175 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:25,175 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:25,175 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82993
+2025-05-05 19:56:25,411 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:25,411 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:25,411 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82993
+2025-05-05 19:56:25,437 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:25,437 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:25,437 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82993
+2025-05-05 19:56:25,458 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:25,458 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:25,458 - INFO - Trying guessed trip_id: 83003
+2025-05-05 19:56:25,458 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/83003
+2025-05-05 19:56:25,527 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:25,527 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:25,527 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/83003
+2025-05-05 19:56:25,555 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:25,566 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:25,566 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/83003
+2025-05-05 19:56:25,590 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:25,590 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:25,590 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/83003/manifest
+2025-05-05 19:56:25,616 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:25,616 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:25,616 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/83003/manifest
+2025-05-05 19:56:25,636 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:25,636 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:25,636 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/83003/manifest
+2025-05-05 19:56:25,659 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:25,659 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:25,665 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/83003/passenger
+2025-05-05 19:56:25,902 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:25,902 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:25,902 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/83003/passenger
+2025-05-05 19:56:25,935 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:25,935 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:25,935 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/83003/passenger
+2025-05-05 19:56:25,955 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:25,955 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:25,955 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/83003/seats
+2025-05-05 19:56:25,978 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:25,978 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:25,978 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/83003/seats
+2025-05-05 19:56:25,995 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:26,001 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:26,001 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/83003/seats
+2025-05-05 19:56:26,024 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:26,024 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:26,024 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/83003
+2025-05-05 19:56:26,044 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:26,049 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:26,049 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/83003
+2025-05-05 19:56:26,071 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:26,071 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:26,071 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/83003
+2025-05-05 19:56:26,092 - INFO - [STATUS] HTTP 200
+2025-05-05 19:56:26,092 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 19:56:26,092 - ERROR - \u274c All automated methods failed.
+2025-05-05 20:03:08,088 - INFO - Starting fully automated fetch for 2025-05-03 22:30:00, seat 18
+2025-05-05 20:03:09,476 - INFO - Starting scraping process for trip_id...
+2025-05-05 20:03:29,322 - INFO - Searching for trip: Tashkent to Bukhara on 2025-05-03 at 22:30:00
+2025-05-05 20:03:44,691 - ERROR - Scraping error: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6A32EEFA5+77893]
+	GetHandleVerifier [0x00007FF6A32EF000+77984]
+	(No symbol) [0x00007FF6A30B91BA]
+	(No symbol) [0x00007FF6A310F16D]
+	(No symbol) [0x00007FF6A310F41C]
+	(No symbol) [0x00007FF6A3162237]
+	(No symbol) [0x00007FF6A313716F]
+	(No symbol) [0x00007FF6A315F07F]
+	(No symbol) [0x00007FF6A3136F03]
+	(No symbol) [0x00007FF6A3100328]
+	(No symbol) [0x00007FF6A3101093]
+	GetHandleVerifier [0x00007FF6A35A7B6D+2931725]
+	GetHandleVerifier [0x00007FF6A35A2132+2908626]
+	GetHandleVerifier [0x00007FF6A35C00F3+3031443]
+	GetHandleVerifier [0x00007FF6A33091EA+184970]
+	GetHandleVerifier [0x00007FF6A331086F+215311]
+	GetHandleVerifier [0x00007FF6A32F6EC4+110436]
+	GetHandleVerifier [0x00007FF6A32F7072+110866]
+	GetHandleVerifier [0x00007FF6A32DD479+5401]
+	BaseThreadInitThunk [0x00007FF8A50BE8D7+23]
+	RtlUserThreadStart [0x00007FF8A72BC5DC+44]
+
+2025-05-05 20:03:44,691 - WARNING - Scraping failed. Falling back to fuzzing trip_id...
+2025-05-05 20:03:44,691 - INFO - Trying guessed trip_id: 82803
+2025-05-05 20:03:44,691 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82803
+2025-05-05 20:03:44,783 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:44,784 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:44,784 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82803
+2025-05-05 20:03:44,801 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:44,801 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:44,801 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82803
+2025-05-05 20:03:44,828 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:44,828 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:44,828 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82803/manifest
+2025-05-05 20:03:44,851 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:44,851 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:44,851 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82803/manifest
+2025-05-05 20:03:44,876 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:44,876 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:44,876 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82803/manifest
+2025-05-05 20:03:44,905 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:44,905 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:44,905 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82803/passenger
+2025-05-05 20:03:44,929 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:44,929 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:44,929 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82803/passenger
+2025-05-05 20:03:44,952 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:44,952 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:44,952 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82803/passenger
+2025-05-05 20:03:44,974 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:44,974 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:44,974 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82803/seats
+2025-05-05 20:03:45,000 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,000 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,000 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82803/seats
+2025-05-05 20:03:45,023 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,023 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,023 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82803/seats
+2025-05-05 20:03:45,043 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,043 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,043 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82803
+2025-05-05 20:03:45,072 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,072 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,072 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82803
+2025-05-05 20:03:45,100 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,100 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,100 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82803
+2025-05-05 20:03:45,123 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,123 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,123 - INFO - Trying guessed trip_id: 82813
+2025-05-05 20:03:45,123 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82813
+2025-05-05 20:03:45,219 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,219 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,219 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82813
+2025-05-05 20:03:45,234 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,234 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,234 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82813
+2025-05-05 20:03:45,263 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,263 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,263 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82813/manifest
+2025-05-05 20:03:45,287 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,287 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,287 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82813/manifest
+2025-05-05 20:03:45,324 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,324 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,324 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82813/manifest
+2025-05-05 20:03:45,348 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,348 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,348 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82813/passenger
+2025-05-05 20:03:45,371 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,371 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,371 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82813/passenger
+2025-05-05 20:03:45,401 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,401 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,401 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82813/passenger
+2025-05-05 20:03:45,425 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,425 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,425 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82813/seats
+2025-05-05 20:03:45,442 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,442 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,442 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82813/seats
+2025-05-05 20:03:45,467 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,467 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,467 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82813/seats
+2025-05-05 20:03:45,494 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,496 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,496 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82813
+2025-05-05 20:03:45,523 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,523 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,523 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82813
+2025-05-05 20:03:45,546 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,546 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,546 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82813
+2025-05-05 20:03:45,569 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,569 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,571 - INFO - Trying guessed trip_id: 82823
+2025-05-05 20:03:45,571 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82823
+2025-05-05 20:03:45,672 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,672 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,672 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82823
+2025-05-05 20:03:45,696 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,700 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,700 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82823
+2025-05-05 20:03:45,730 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,732 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,732 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82823/manifest
+2025-05-05 20:03:45,754 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,756 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,756 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82823/manifest
+2025-05-05 20:03:45,791 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,791 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,791 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82823/manifest
+2025-05-05 20:03:45,814 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,821 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,821 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82823/passenger
+2025-05-05 20:03:45,845 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,846 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,846 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82823/passenger
+2025-05-05 20:03:45,870 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,870 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,870 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82823/passenger
+2025-05-05 20:03:45,895 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,895 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,895 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82823/seats
+2025-05-05 20:03:45,920 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,920 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,920 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82823/seats
+2025-05-05 20:03:45,950 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,950 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,950 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82823/seats
+2025-05-05 20:03:45,971 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,971 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,971 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82823
+2025-05-05 20:03:45,994 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:45,995 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:45,995 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82823
+2025-05-05 20:03:46,013 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,013 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,013 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82823
+2025-05-05 20:03:46,043 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,043 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,043 - INFO - Trying guessed trip_id: 82833
+2025-05-05 20:03:46,043 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82833
+2025-05-05 20:03:46,112 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,112 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,113 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82833
+2025-05-05 20:03:46,134 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,135 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,135 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82833
+2025-05-05 20:03:46,159 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,159 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,159 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82833/manifest
+2025-05-05 20:03:46,186 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,186 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,186 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82833/manifest
+2025-05-05 20:03:46,209 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,209 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,209 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82833/manifest
+2025-05-05 20:03:46,235 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,235 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,235 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82833/passenger
+2025-05-05 20:03:46,262 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,262 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,262 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82833/passenger
+2025-05-05 20:03:46,292 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,292 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,292 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82833/passenger
+2025-05-05 20:03:46,315 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,315 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,315 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82833/seats
+2025-05-05 20:03:46,369 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,370 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,370 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82833/seats
+2025-05-05 20:03:46,400 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,400 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,400 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82833/seats
+2025-05-05 20:03:46,429 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,429 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,429 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82833
+2025-05-05 20:03:46,463 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,463 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,463 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82833
+2025-05-05 20:03:46,486 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,488 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,488 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82833
+2025-05-05 20:03:46,510 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,510 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,510 - INFO - Trying guessed trip_id: 82843
+2025-05-05 20:03:46,510 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82843
+2025-05-05 20:03:46,595 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,595 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,595 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82843
+2025-05-05 20:03:46,619 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,619 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,619 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82843
+2025-05-05 20:03:46,648 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,648 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,648 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82843/manifest
+2025-05-05 20:03:46,683 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,683 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,683 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82843/manifest
+2025-05-05 20:03:46,706 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,706 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,706 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82843/manifest
+2025-05-05 20:03:46,731 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,731 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,731 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82843/passenger
+2025-05-05 20:03:46,753 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,753 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,753 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82843/passenger
+2025-05-05 20:03:46,777 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,777 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,777 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82843/passenger
+2025-05-05 20:03:46,803 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,803 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,803 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82843/seats
+2025-05-05 20:03:46,823 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,823 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,823 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82843/seats
+2025-05-05 20:03:46,856 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,856 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,857 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82843/seats
+2025-05-05 20:03:46,882 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,882 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,882 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82843
+2025-05-05 20:03:46,902 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,904 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,904 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82843
+2025-05-05 20:03:46,925 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,925 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,925 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82843
+2025-05-05 20:03:46,949 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:46,949 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:46,949 - INFO - Trying guessed trip_id: 82853
+2025-05-05 20:03:46,953 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82853
+2025-05-05 20:03:47,076 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,076 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,076 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82853
+2025-05-05 20:03:47,104 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,104 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,104 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82853
+2025-05-05 20:03:47,137 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,137 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,137 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82853/manifest
+2025-05-05 20:03:47,155 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,155 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,155 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82853/manifest
+2025-05-05 20:03:47,183 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,183 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,183 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82853/manifest
+2025-05-05 20:03:47,205 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,212 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,212 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82853/passenger
+2025-05-05 20:03:47,235 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,235 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,235 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82853/passenger
+2025-05-05 20:03:47,264 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,266 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,266 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82853/passenger
+2025-05-05 20:03:47,288 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,288 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,288 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82853/seats
+2025-05-05 20:03:47,312 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,312 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,313 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82853/seats
+2025-05-05 20:03:47,335 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,335 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,335 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82853/seats
+2025-05-05 20:03:47,357 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,360 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,360 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82853
+2025-05-05 20:03:47,383 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,383 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,383 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82853
+2025-05-05 20:03:47,404 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,404 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,404 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82853
+2025-05-05 20:03:47,426 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,426 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,429 - INFO - Trying guessed trip_id: 82863
+2025-05-05 20:03:47,429 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82863
+2025-05-05 20:03:47,499 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,499 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,499 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82863
+2025-05-05 20:03:47,517 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,517 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,522 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82863
+2025-05-05 20:03:47,547 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,547 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,547 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82863/manifest
+2025-05-05 20:03:47,574 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,574 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,574 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82863/manifest
+2025-05-05 20:03:47,599 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,600 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,600 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82863/manifest
+2025-05-05 20:03:47,622 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,624 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,624 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82863/passenger
+2025-05-05 20:03:47,651 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,651 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,651 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82863/passenger
+2025-05-05 20:03:47,678 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,678 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,678 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82863/passenger
+2025-05-05 20:03:47,705 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,712 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,712 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82863/seats
+2025-05-05 20:03:47,779 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,779 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,779 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82863/seats
+2025-05-05 20:03:47,801 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,801 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,801 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82863/seats
+2025-05-05 20:03:47,820 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,820 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,820 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82863
+2025-05-05 20:03:47,845 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,845 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,845 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82863
+2025-05-05 20:03:47,870 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,871 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,871 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82863
+2025-05-05 20:03:47,897 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:47,897 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:47,897 - INFO - Trying guessed trip_id: 82873
+2025-05-05 20:03:47,897 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82873
+2025-05-05 20:03:48,003 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,003 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,005 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82873
+2025-05-05 20:03:48,027 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,027 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,027 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82873
+2025-05-05 20:03:48,052 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,052 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,052 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82873/manifest
+2025-05-05 20:03:48,082 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,082 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,082 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82873/manifest
+2025-05-05 20:03:48,109 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,109 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,109 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82873/manifest
+2025-05-05 20:03:48,134 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,134 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,134 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82873/passenger
+2025-05-05 20:03:48,161 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,161 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,161 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82873/passenger
+2025-05-05 20:03:48,185 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,185 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,185 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82873/passenger
+2025-05-05 20:03:48,211 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,211 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,211 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82873/seats
+2025-05-05 20:03:48,233 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,233 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,233 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82873/seats
+2025-05-05 20:03:48,257 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,257 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,257 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82873/seats
+2025-05-05 20:03:48,284 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,284 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,284 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82873
+2025-05-05 20:03:48,309 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,309 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,309 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82873
+2025-05-05 20:03:48,332 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,332 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,332 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82873
+2025-05-05 20:03:48,357 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,357 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,357 - INFO - Trying guessed trip_id: 82883
+2025-05-05 20:03:48,357 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82883
+2025-05-05 20:03:48,443 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,443 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,443 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82883
+2025-05-05 20:03:48,464 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,467 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,467 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82883
+2025-05-05 20:03:48,503 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,503 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,503 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82883/manifest
+2025-05-05 20:03:48,527 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,527 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,527 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82883/manifest
+2025-05-05 20:03:48,553 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,553 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,553 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82883/manifest
+2025-05-05 20:03:48,572 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,572 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,572 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82883/passenger
+2025-05-05 20:03:48,598 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,598 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,598 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82883/passenger
+2025-05-05 20:03:48,624 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,624 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,624 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82883/passenger
+2025-05-05 20:03:48,646 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,646 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,646 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82883/seats
+2025-05-05 20:03:48,663 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,663 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,663 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82883/seats
+2025-05-05 20:03:48,697 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,697 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,697 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82883/seats
+2025-05-05 20:03:48,720 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,725 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,725 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82883
+2025-05-05 20:03:48,748 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,748 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,748 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82883
+2025-05-05 20:03:48,772 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,772 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,772 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82883
+2025-05-05 20:03:48,796 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:48,796 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:48,796 - INFO - Trying guessed trip_id: 82893
+2025-05-05 20:03:48,796 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82893
+2025-05-05 20:03:49,920 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:49,921 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:49,921 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82893
+2025-05-05 20:03:50,153 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:50,153 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:50,153 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82893
+2025-05-05 20:03:50,378 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:50,378 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:50,378 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82893/manifest
+2025-05-05 20:03:50,779 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:50,779 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:50,779 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82893/manifest
+2025-05-05 20:03:51,166 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:51,166 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:51,166 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82893/manifest
+2025-05-05 20:03:51,319 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:51,321 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:51,321 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82893/passenger
+2025-05-05 20:03:51,342 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:51,342 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:51,342 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82893/passenger
+2025-05-05 20:03:51,874 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:51,874 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:51,874 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82893/passenger
+2025-05-05 20:03:51,894 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:51,894 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:51,894 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82893/seats
+2025-05-05 20:03:51,918 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:51,919 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:51,919 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82893/seats
+2025-05-05 20:03:51,938 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:51,946 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:51,946 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82893/seats
+2025-05-05 20:03:51,969 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:51,969 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:51,969 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82893
+2025-05-05 20:03:51,989 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:51,989 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:51,989 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82893
+2025-05-05 20:03:52,016 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,016 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,016 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82893
+2025-05-05 20:03:52,037 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,037 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,037 - INFO - Trying guessed trip_id: 82903
+2025-05-05 20:03:52,037 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82903
+2025-05-05 20:03:52,154 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,154 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,154 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82903
+2025-05-05 20:03:52,176 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,176 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,176 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82903
+2025-05-05 20:03:52,202 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,202 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,202 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82903/manifest
+2025-05-05 20:03:52,228 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,228 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,228 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82903/manifest
+2025-05-05 20:03:52,248 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,248 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,248 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82903/manifest
+2025-05-05 20:03:52,271 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,271 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,271 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82903/passenger
+2025-05-05 20:03:52,290 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,290 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,290 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82903/passenger
+2025-05-05 20:03:52,318 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,318 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,318 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82903/passenger
+2025-05-05 20:03:52,338 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,338 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,338 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82903/seats
+2025-05-05 20:03:52,360 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,360 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,360 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82903/seats
+2025-05-05 20:03:52,385 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,385 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,385 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82903/seats
+2025-05-05 20:03:52,419 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,419 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,419 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82903
+2025-05-05 20:03:52,443 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,443 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,443 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82903
+2025-05-05 20:03:52,469 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,469 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,469 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82903
+2025-05-05 20:03:52,487 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,487 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,487 - INFO - Trying guessed trip_id: 82913
+2025-05-05 20:03:52,487 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82913
+2025-05-05 20:03:52,562 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,563 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,563 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82913
+2025-05-05 20:03:52,594 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,594 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,594 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82913
+2025-05-05 20:03:52,617 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,618 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,618 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82913/manifest
+2025-05-05 20:03:52,643 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,643 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,643 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82913/manifest
+2025-05-05 20:03:52,666 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,666 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,666 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82913/manifest
+2025-05-05 20:03:52,687 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,687 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,687 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82913/passenger
+2025-05-05 20:03:52,712 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,713 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,713 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82913/passenger
+2025-05-05 20:03:52,730 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,738 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,738 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82913/passenger
+2025-05-05 20:03:52,759 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,759 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,759 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82913/seats
+2025-05-05 20:03:52,782 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,782 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,782 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82913/seats
+2025-05-05 20:03:52,814 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,815 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,815 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82913/seats
+2025-05-05 20:03:52,837 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,837 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,837 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82913
+2025-05-05 20:03:52,858 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,858 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,858 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82913
+2025-05-05 20:03:52,883 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,883 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,883 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82913
+2025-05-05 20:03:52,904 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:52,904 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:52,904 - INFO - Trying guessed trip_id: 82923
+2025-05-05 20:03:52,904 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82923
+2025-05-05 20:03:53,029 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:53,029 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:53,029 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82923
+2025-05-05 20:03:53,062 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:53,062 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:53,062 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82923
+2025-05-05 20:03:53,093 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:53,093 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:53,093 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82923/manifest
+2025-05-05 20:03:53,115 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:53,115 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:53,115 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82923/manifest
+2025-05-05 20:03:53,137 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:53,155 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:53,155 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82923/manifest
+2025-05-05 20:03:53,179 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:53,179 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:53,179 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82923/passenger
+2025-05-05 20:03:53,204 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:53,204 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:53,204 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82923/passenger
+2025-05-05 20:03:53,225 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:53,225 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:53,225 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82923/passenger
+2025-05-05 20:03:53,245 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:53,245 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:53,245 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82923/seats
+2025-05-05 20:03:53,266 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:53,266 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:53,266 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82923/seats
+2025-05-05 20:03:53,279 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:53,286 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:53,286 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82923/seats
+2025-05-05 20:03:53,318 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:53,319 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:53,319 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82923
+2025-05-05 20:03:53,354 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:53,354 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:53,354 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82923
+2025-05-05 20:03:53,653 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:53,653 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:53,653 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82923
+2025-05-05 20:03:53,675 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:53,675 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:53,675 - INFO - Trying guessed trip_id: 82933
+2025-05-05 20:03:53,675 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82933
+2025-05-05 20:03:53,745 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:53,748 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:53,748 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82933
+2025-05-05 20:03:53,764 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:53,764 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:53,764 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82933
+2025-05-05 20:03:53,788 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:53,788 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:53,788 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82933/manifest
+2025-05-05 20:03:53,825 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:53,825 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:53,825 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82933/manifest
+2025-05-05 20:03:53,852 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:53,852 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:53,852 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82933/manifest
+2025-05-05 20:03:53,871 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:53,878 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:53,878 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82933/passenger
+2025-05-05 20:03:53,894 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:53,894 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:53,894 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82933/passenger
+2025-05-05 20:03:53,922 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:53,922 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:53,922 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82933/passenger
+2025-05-05 20:03:53,946 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:53,946 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:53,946 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82933/seats
+2025-05-05 20:03:53,984 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:53,986 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:53,986 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82933/seats
+2025-05-05 20:03:54,013 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:54,013 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:54,013 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82933/seats
+2025-05-05 20:03:54,055 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:54,055 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:54,055 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82933
+2025-05-05 20:03:54,083 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:54,083 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:54,083 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82933
+2025-05-05 20:03:54,113 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:54,113 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:54,113 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82933
+2025-05-05 20:03:54,146 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:54,146 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:54,146 - INFO - Trying guessed trip_id: 82943
+2025-05-05 20:03:54,146 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82943
+2025-05-05 20:03:55,001 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,001 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,009 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82943
+2025-05-05 20:03:55,034 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,034 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,034 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82943
+2025-05-05 20:03:55,063 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,063 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,063 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82943/manifest
+2025-05-05 20:03:55,086 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,089 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,089 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82943/manifest
+2025-05-05 20:03:55,109 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,109 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,109 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82943/manifest
+2025-05-05 20:03:55,129 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,131 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,131 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82943/passenger
+2025-05-05 20:03:55,158 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,158 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,158 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82943/passenger
+2025-05-05 20:03:55,189 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,189 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,189 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82943/passenger
+2025-05-05 20:03:55,207 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,207 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,207 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82943/seats
+2025-05-05 20:03:55,226 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,226 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,226 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82943/seats
+2025-05-05 20:03:55,249 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,249 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,249 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82943/seats
+2025-05-05 20:03:55,274 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,274 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,274 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82943
+2025-05-05 20:03:55,289 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,289 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,289 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82943
+2025-05-05 20:03:55,318 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,318 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,318 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82943
+2025-05-05 20:03:55,396 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,396 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,396 - INFO - Trying guessed trip_id: 82953
+2025-05-05 20:03:55,396 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82953
+2025-05-05 20:03:55,520 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,520 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,520 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82953
+2025-05-05 20:03:55,562 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,562 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,562 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82953
+2025-05-05 20:03:55,580 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,580 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,580 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82953/manifest
+2025-05-05 20:03:55,611 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,611 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,611 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82953/manifest
+2025-05-05 20:03:55,650 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,650 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,650 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82953/manifest
+2025-05-05 20:03:55,680 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,680 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,680 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82953/passenger
+2025-05-05 20:03:55,716 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,716 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,716 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82953/passenger
+2025-05-05 20:03:55,743 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,743 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,745 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82953/passenger
+2025-05-05 20:03:55,767 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,767 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,767 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82953/seats
+2025-05-05 20:03:55,783 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,783 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,783 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82953/seats
+2025-05-05 20:03:55,808 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,808 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,810 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82953/seats
+2025-05-05 20:03:55,851 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,851 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,851 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82953
+2025-05-05 20:03:55,879 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,882 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,882 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82953
+2025-05-05 20:03:55,914 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,914 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,914 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82953
+2025-05-05 20:03:55,957 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:55,957 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:55,957 - INFO - Trying guessed trip_id: 82963
+2025-05-05 20:03:55,957 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82963
+2025-05-05 20:03:56,136 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:56,136 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:56,136 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82963
+2025-05-05 20:03:56,182 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:56,182 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:56,182 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82963
+2025-05-05 20:03:56,217 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:56,217 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:56,217 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82963/manifest
+2025-05-05 20:03:56,243 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:56,243 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:56,243 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82963/manifest
+2025-05-05 20:03:56,281 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:56,283 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:56,283 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82963/manifest
+2025-05-05 20:03:56,310 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:56,310 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:56,310 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82963/passenger
+2025-05-05 20:03:56,355 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:56,355 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:56,355 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82963/passenger
+2025-05-05 20:03:56,384 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:56,386 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:56,386 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82963/passenger
+2025-05-05 20:03:56,413 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:56,415 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:56,415 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82963/seats
+2025-05-05 20:03:56,439 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:56,439 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:56,439 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82963/seats
+2025-05-05 20:03:56,472 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:56,472 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:56,472 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82963/seats
+2025-05-05 20:03:56,503 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:56,503 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:56,503 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82963
+2025-05-05 20:03:56,534 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:56,536 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:56,536 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82963
+2025-05-05 20:03:56,563 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:56,563 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:56,563 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82963
+2025-05-05 20:03:56,590 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:56,590 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:56,590 - INFO - Trying guessed trip_id: 82973
+2025-05-05 20:03:56,590 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82973
+2025-05-05 20:03:56,698 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:56,698 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:56,698 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82973
+2025-05-05 20:03:56,722 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:56,722 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:56,722 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82973
+2025-05-05 20:03:56,751 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:56,751 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:56,751 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82973/manifest
+2025-05-05 20:03:56,778 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:56,779 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:56,779 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82973/manifest
+2025-05-05 20:03:56,809 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:56,810 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:56,810 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82973/manifest
+2025-05-05 20:03:56,836 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:56,836 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:56,837 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82973/passenger
+2025-05-05 20:03:56,868 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:56,868 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:56,868 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82973/passenger
+2025-05-05 20:03:56,896 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:56,896 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:56,896 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82973/passenger
+2025-05-05 20:03:56,929 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:56,930 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:56,930 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82973/seats
+2025-05-05 20:03:56,952 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:56,952 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:56,952 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82973/seats
+2025-05-05 20:03:56,982 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:56,982 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:56,982 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82973/seats
+2025-05-05 20:03:57,008 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:57,008 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:57,008 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82973
+2025-05-05 20:03:57,031 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:57,031 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:57,031 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82973
+2025-05-05 20:03:57,056 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:57,056 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:57,056 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82973
+2025-05-05 20:03:57,088 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:57,088 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:57,089 - INFO - Trying guessed trip_id: 82983
+2025-05-05 20:03:57,089 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82983
+2025-05-05 20:03:57,208 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:57,208 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:57,208 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82983
+2025-05-05 20:03:57,234 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:57,234 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:57,234 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82983
+2025-05-05 20:03:57,262 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:57,262 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:57,262 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82983/manifest
+2025-05-05 20:03:57,288 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:57,288 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:57,290 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82983/manifest
+2025-05-05 20:03:57,314 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:57,314 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:57,315 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82983/manifest
+2025-05-05 20:03:57,339 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:57,339 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:57,339 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82983/passenger
+2025-05-05 20:03:57,361 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:57,366 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:57,366 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82983/passenger
+2025-05-05 20:03:57,385 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:57,385 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:57,385 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82983/passenger
+2025-05-05 20:03:57,420 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:57,420 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:57,420 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82983/seats
+2025-05-05 20:03:57,448 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:57,448 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:57,448 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82983/seats
+2025-05-05 20:03:57,484 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:57,484 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:57,484 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82983/seats
+2025-05-05 20:03:57,682 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:57,690 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:57,690 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82983
+2025-05-05 20:03:58,304 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:58,304 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:58,304 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82983
+2025-05-05 20:03:58,337 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:58,337 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:58,337 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82983
+2025-05-05 20:03:58,534 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:58,534 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:58,534 - INFO - Trying guessed trip_id: 82993
+2025-05-05 20:03:58,534 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82993
+2025-05-05 20:03:59,398 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:59,398 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:59,398 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82993
+2025-05-05 20:03:59,423 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:59,423 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:59,423 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/82993
+2025-05-05 20:03:59,648 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:59,648 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:59,648 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82993/manifest
+2025-05-05 20:03:59,852 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:59,852 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:59,852 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82993/manifest
+2025-05-05 20:03:59,880 - INFO - [STATUS] HTTP 200
+2025-05-05 20:03:59,880 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:03:59,880 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/82993/manifest
+2025-05-05 20:04:00,299 - INFO - [STATUS] HTTP 200
+2025-05-05 20:04:00,299 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:04:00,299 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82993/passenger
+2025-05-05 20:04:00,327 - INFO - [STATUS] HTTP 200
+2025-05-05 20:04:00,327 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:04:00,327 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82993/passenger
+2025-05-05 20:04:00,699 - INFO - [STATUS] HTTP 200
+2025-05-05 20:04:00,699 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:04:00,699 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/82993/passenger
+2025-05-05 20:04:00,720 - INFO - [STATUS] HTTP 200
+2025-05-05 20:04:00,720 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:04:00,720 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82993/seats
+2025-05-05 20:04:00,738 - INFO - [STATUS] HTTP 200
+2025-05-05 20:04:00,738 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:04:00,738 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82993/seats
+2025-05-05 20:04:01,107 - INFO - [STATUS] HTTP 200
+2025-05-05 20:04:01,107 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:04:01,107 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/82993/seats
+2025-05-05 20:04:01,131 - INFO - [STATUS] HTTP 200
+2025-05-05 20:04:01,131 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:04:01,131 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82993
+2025-05-05 20:04:01,513 - INFO - [STATUS] HTTP 200
+2025-05-05 20:04:01,513 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:04:01,513 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82993
+2025-05-05 20:04:01,532 - INFO - [STATUS] HTTP 200
+2025-05-05 20:04:01,532 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:04:01,532 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/82993
+2025-05-05 20:04:01,555 - INFO - [STATUS] HTTP 200
+2025-05-05 20:04:01,555 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:04:01,555 - INFO - Trying guessed trip_id: 83003
+2025-05-05 20:04:01,555 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/83003
+2025-05-05 20:04:01,640 - INFO - [STATUS] HTTP 200
+2025-05-05 20:04:01,640 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:04:01,640 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/83003
+2025-05-05 20:04:01,664 - INFO - [STATUS] HTTP 200
+2025-05-05 20:04:01,664 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:04:01,664 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/internal/orders/by-trip/83003
+2025-05-05 20:04:01,682 - INFO - [STATUS] HTTP 200
+2025-05-05 20:04:01,685 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:04:01,685 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/83003/manifest
+2025-05-05 20:04:01,704 - INFO - [STATUS] HTTP 200
+2025-05-05 20:04:01,704 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:04:01,704 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/83003/manifest
+2025-05-05 20:04:01,729 - INFO - [STATUS] HTTP 200
+2025-05-05 20:04:01,729 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:04:01,729 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v1/trip/83003/manifest
+2025-05-05 20:04:01,746 - INFO - [STATUS] HTTP 200
+2025-05-05 20:04:01,746 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:04:01,746 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/83003/passenger
+2025-05-05 20:04:01,763 - INFO - [STATUS] HTTP 200
+2025-05-05 20:04:01,769 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:04:01,769 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/83003/passenger
+2025-05-05 20:04:01,787 - INFO - [STATUS] HTTP 200
+2025-05-05 20:04:01,787 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:04:01,787 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/tickets/83003/passenger
+2025-05-05 20:04:01,809 - INFO - [STATUS] HTTP 200
+2025-05-05 20:04:01,809 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:04:01,809 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/83003/seats
+2025-05-05 20:04:01,828 - INFO - [STATUS] HTTP 200
+2025-05-05 20:04:01,828 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:04:01,828 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/83003/seats
+2025-05-05 20:04:01,847 - INFO - [STATUS] HTTP 200
+2025-05-05 20:04:01,847 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:04:01,847 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/v2/trip/83003/seats
+2025-05-05 20:04:01,863 - INFO - [STATUS] HTTP 200
+2025-05-05 20:04:01,869 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:04:01,869 - INFO - [ATTEMPT 1] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/83003
+2025-05-05 20:04:01,887 - INFO - [STATUS] HTTP 200
+2025-05-05 20:04:01,887 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:04:01,887 - INFO - [ATTEMPT 2] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/83003
+2025-05-05 20:04:01,910 - INFO - [STATUS] HTTP 200
+2025-05-05 20:04:01,910 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:04:01,910 - INFO - [ATTEMPT 3] Requesting: https://wapi.congresshall.avtotickets.uz/api/passengers/83003
+2025-05-05 20:04:01,931 - INFO - [STATUS] HTTP 200
+2025-05-05 20:04:01,931 - WARNING - Error in response: {
+  "message": "Requested URL not found",
+  "code": 404
+}
+2025-05-05 20:04:01,931 - ERROR - \u274c All automated methods failed.

